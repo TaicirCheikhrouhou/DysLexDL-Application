@@ -1,0 +1,577 @@
+/* Existing Login Page Styles */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.decor-left,
+.decor-right {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to bottom right, #007cf0, #00dfd8);
+    border-radius: 50% 50% 0 0;
+    z-index: 0;
+}
+
+.decor-left {
+    top: 0;
+    left: 0;
+    border-radius: 0 0 60% 0;
+}
+
+.decor-right {
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 60%;
+}
+
+.login-box {
+    z-index: 1;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Input Fields */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.login-box input:focus {
+  border-color: #007bff;
+}
+/* Checkbox + Label */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 18px;
+  justify-content: flex-start;
+}
+.login-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.login-actions button {
+    background-color: #007cf0;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 24px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-actions button:hover {
+    background-color: #005fc0;
+}
+
+.login-actions a {
+    font-size: 14px;
+    color: #007cf0;
+    text-decoration: none;
+}
+
+.create-account {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.create-account a {
+    color: #007cf0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  margin: 24px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.75em;
+}
+.divider:not(:empty)::after {
+  margin-left: 0.75em;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border-radius: 24px;
+  border: 1px solid #ccc;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.google-btn:hover {
+    background: #f8f8f8;
+}
+
+/* Message Box */
+.message {
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+/* New CSS for the form (without modifying existing login styles) */
+
+/* Body Styling */
+body {
+  background: linear-gradient(to bottom right, #ebf8ff, #cce4f7);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 1rem;
+}
+/* Container Styles */
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  background: linear-gradient(to bottom right, #ebf8ff, #cce4f7);
+  gap: 2rem;
+  padding: 2rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Increased space between form elements */
+}
+/* Form Card Styles */
+.form-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.form-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2rem; /* Increased font size */
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 2rem; /* Added more space between title and form */
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px dashed #63b3ed;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 2px rgba(48, 130, 206, 0.2);
+  background-color: #e2f0fe; /* Slight background color change for focus */
+}
+
+.input-field::placeholder {
+  color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.input-field:focus::placeholder {
+  color: #3182ce;
+}
+
+
+/* Button Styles */
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 0.75rem;
+  background-color: #3182ce;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.submit-btn:hover {
+  background-color: #2b6cb0;
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:disabled {
+  background-color: #63b3ed;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fed7d7;
+  color: #e53e3e;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Result Box Styles */
+.result-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f7fafc;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.result-box img {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.result-box strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Shared Styles */
+.navbar,
+.footer {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 14px 30px; /* added consistent padding */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px; 
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #1a3faa;
+}
+
+.navbar-logo img {
+  height: 45px; /* slightly larger for balance */
+}
+
+.navbar-logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  letter-spacing: 0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px; /* better spacing between links */
+  margin-left: 80px; /* add distance from logo */
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #2563eb;
+}
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5rem; /* Adjust padding to control spacing around edges */
+  background-color: #f0f8ff; /* Light blue or whatever you like */
+  border-top: 1px solid #ddd;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-contact div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .footer-contact {
+    align-items: center;
+  }
+}
+
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Ensure responsiveness for mobile */
+@media screen and (max-width: 480px) {
+  .form-card {
+    padding: 1rem;
+  }
+
+  .form-title {
+    font-size: 1.25rem;
+  }
+
+  .input-field {
+    padding: 0.75rem;
+  }
+
+  .submit-btn {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+/*home css */
+.cta-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #e0f7ff, #f2f9ff);
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  color: #1a3e7c;
+  margin-bottom: 1rem;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.cta-button {
+  background-color: #005bff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #003366;
+}
+/* buutton get back*/
+
+.retour-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #005bff; /* Use your login blue */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.retour-btn:hover {
+  background-color: #003db3; /* A slightly darker shade on hover */
+}
+.icon-retour-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #005bff; /* Your login blue */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-retour-btn:hover {
+  background-color: #003db3;
+}
+/* logout button */
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #005bff;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  margin-left: 100px; /* space it out from the links */  border-radius: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 91, 255, 0.2);
+}
+
+.logout-button:hover {
+  background-color: #0041c4;
+  transform: translateY(-1px);
+}
+
+.logout-button:active {
+  transform: scale(0.97);
+}

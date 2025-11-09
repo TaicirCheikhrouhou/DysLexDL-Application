@@ -1,0 +1,11 @@
+Flask==2.2.2
+flask-cors==3.0.10
+tensorflow
+numpy
+nibabel
+SimpleITK
+nilearn
+matplotlib
+scipy
+opencv-python
+werkzeug==2.3.7
