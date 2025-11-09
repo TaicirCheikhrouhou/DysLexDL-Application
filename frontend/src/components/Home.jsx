@@ -9,7 +9,6 @@ function Home() {
 
   return (
     <div className="home-container">
-      {/* Hero Section / CTA */}
       <section className="cta-section">
         <div className="cta-content">
           <h2>Start a new diagnosis</h2>
@@ -20,7 +19,7 @@ function Home() {
         </div>
       </section>
 
-      {/* You can add more content here */}
+      
     </div>
   );
 }
