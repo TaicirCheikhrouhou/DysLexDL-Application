@@ -25,8 +25,8 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 CORS(app)
 
 # Load models
-MRI_MODEL_PATH = './models/2D_CNN_10_slices_89.keras'
-FMRI_MODEL_PATH = './models/lstm92.keras'
+MRI_MODEL_PATH = './models/3D_CNN.keras'
+FMRI_MODEL_PATH = './models/3DCNNLSTM.keras'
 mri_model = load_model(MRI_MODEL_PATH)
 fmri_model = load_model(FMRI_MODEL_PATH)
 
