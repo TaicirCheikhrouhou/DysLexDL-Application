@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './components/LoginPage';
 import Dashboard from './components/Dashboard';
-import AnalyzeForm from './components/AnalyzeForm'; // Assuming you renamed UploadPage → AnalyzeForm
+import AnalyzeForm from './components/AnalyzeForm'; 
 
 function App() {
   return (
