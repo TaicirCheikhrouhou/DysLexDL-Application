@@ -12,7 +12,7 @@ const Footer = () => {
 
       <div className="footer-contact">
         <div><FaPhoneAlt /> +216 50708097</div>
-        <div><FaEnvelope /> dyslexdl@company.com</div>
+        <div><FaEnvelope /> taicir.cheikhrouhou@enis.tn</div>
         <div><FaMapMarkerAlt /> Sfax, Route soukra km 3.5</div>
       </div>
     </footer>
